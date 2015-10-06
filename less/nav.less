@@ -1,0 +1,73 @@
+@import "bootstrap_index";
+@import "variables";
+@import "window_utils";
+
+.header {
+  position: relative;
+  height: 150px;
+
+  img {
+    position: absolute;
+    max-height: 150px;
+    right: 0px;
+    top: 0px;
+  }
+
+  @media(min-width: (@tablet+ 1)) {
+    img.mobile {
+      display: none;
+    }
+  }
+
+  @media(max-width: @tablet) {
+    img.tablet {
+      display: none;
+    }
+  }
+
+  a .title {
+    color: black;
+    font-family: 'Permanent Marker';
+
+    @media(min-width: (@tablet + 1)) {
+      font-size: 62px;
+      left: 50px;
+    }
+    @media(min-width: (@mobile + 1)) and (max-width: @tablet) {
+      font-size: 48px;
+    }
+    @media(max-width: @mobile) {
+      font-size: 32px;
+      top: 15px;
+    }
+    left: 15px;
+    position: absolute;
+    top: 15px;
+  }
+
+  ul {
+    top: 135px;
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    a {
+      display: block;
+      width: 80px;
+      color: black;
+    }
+    li {
+      display: inline;
+      float: left;
+    }
+  }
+
+  @media(min-width: (@mobile + 1)) {
+    ul {
+      padding-left: 45px;
+      a {
+        width: 90px;
+      }
+    }
+  }
+}
