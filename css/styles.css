@@ -7077,7 +7077,7 @@ body {
 }
 .header ul a {
   display: block;
-  width: 80px;
+  width: 90px;
   color: black;
 }
 .header ul li {
@@ -7089,7 +7089,7 @@ body {
     padding-left: 45px;
   }
   .header ul a {
-    width: 90px;
+    width: 125px;
   }
 }
 .home {
