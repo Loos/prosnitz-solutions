@@ -2,10 +2,9 @@
 @import "variables.less";
 @import "nav.less";
 
-.faq {
+.products {
   .nav;
   .content {
-    background: @brand-light-brown;
     font-size: 20px;
 
     .content-container {
@@ -18,6 +17,24 @@
         .content-column {
           .make-sm-column(8);
           .make-sm-column-offset(2);
+          ul {
+            list-style-type: none;
+          }
+          li {
+            clear: both;
+          }
+
+          img {
+            float: left;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            width: 100px;
+          }
+          .description {
+            h3 {
+              display: inline;
+            }
+          }
         }
       }
     }
